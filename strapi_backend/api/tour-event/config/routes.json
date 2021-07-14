@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tour-events",
+      "handler": "tour-event.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tour-events/count",
+      "handler": "tour-event.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tour-events/:id",
+      "handler": "tour-event.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tour-events",
+      "handler": "tour-event.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tour-events/:id",
+      "handler": "tour-event.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tour-events/:id",
+      "handler": "tour-event.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

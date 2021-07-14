@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookmarks",
+  "info": {
+    "name": "Bookmark"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "synopsis": {
+      "type": "text"
+    }
+  }
+}

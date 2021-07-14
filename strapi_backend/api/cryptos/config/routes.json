@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cryptos",
+      "handler": "cryptos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cryptos/count",
+      "handler": "cryptos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cryptos/:id",
+      "handler": "cryptos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cryptos/names/:name",
+      "handler": "cryptos.findOneByName",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cryptos",
+      "handler": "cryptos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cryptos/:id",
+      "handler": "cryptos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cryptos/:id",
+      "handler": "cryptos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

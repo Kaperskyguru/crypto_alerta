@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cryptos",
+  "info": {
+    "name": "Cryptos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "float"
+    },
+    "alert_price": {
+      "type": "float"
+    }
+  }
+}
