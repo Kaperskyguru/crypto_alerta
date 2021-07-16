@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Modal from "react-modal";
-import { storeAlertPrice } from "../lib/Coinbase";
+import { storeAlertPrice } from "../lib/Nomics";
 
 const customStyles = {
   content: {
@@ -15,13 +15,6 @@ const customStyles = {
 };
 
 Modal.setAppElement("#modal-root");
-
-function saveAlertPrice(e, crypto) {
-  e.preventDefault();
-
-  console.log(e.price);
-  //   await storeAlertPrice(crypto.id, crypto.price);
-}
 
 function Add({ show, crypto }) {
   let subtitle;
@@ -55,7 +48,6 @@ function Add({ show, crypto }) {
         <form
           onSubmit={async (e) => {
             e.preventDefault();
-            console.log(price);
             await storeAlertPrice(crypto, price);
           }}
         >

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
 import Cryptos from "../components/Cryptos";
-import { checkAlertPrice, getCryptoData } from "../lib/Coinbase";
+import { checkAlertPrice, getCryptoData } from "../lib/Nomics";
 export async function getStaticProps() {
   const cryptos = await getCryptoData();
   return {
